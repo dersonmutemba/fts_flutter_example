@@ -55,25 +55,30 @@ class _MyHomePageState extends State<MyHomePage> {
               controller: firstNameController,
               keyboardType: TextInputType.text,
               textCapitalization: TextCapitalization.words,
+              decoration: const InputDecoration(hintText: 'First Name'),
             ),
             TextField(
               controller: lastNameController,
               keyboardType: TextInputType.text,
               textCapitalization: TextCapitalization.words,
+              decoration: const InputDecoration(hintText: 'Last Name'),
             ),
             TextField(
               controller: ageController,
               keyboardType: TextInputType.number,
+              decoration: const InputDecoration(hintText: 'Age'),
             ),
             TextField(
               controller: addressController,
               keyboardType: TextInputType.text,
               textCapitalization: TextCapitalization.words,
+              decoration: const InputDecoration(hintText: 'Address'),
             ),
             TextField(
               controller: nationalityController,
               keyboardType: TextInputType.text,
               textCapitalization: TextCapitalization.words,
+              decoration: const InputDecoration(hintText: 'Nationality'),
             ),
             ElevatedButton(
                 onPressed: () {
