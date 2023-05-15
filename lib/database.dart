@@ -61,6 +61,7 @@ END;''');
   }
 
   Future<List<Person>> queryUsingFTS(String queryString) async {
+    queryString = queryString.toLowerCase();
     var result = await _db.rawQuery(
         'SELECT * FROM people_fts WHERE people_fts MATCH "$queryString"');
     List<Person> people = [];
